@@ -275,7 +275,7 @@ public class HomeworkThreeTestHarness {
 		// Given a string of letters/words, remove the duplicate spaces (leaving only 1 space max)
 		// Example Input: "  1  2  3  ";
 		// Example Output: " 1 2 3 ";
-		System.out.println("Removed internal spaces : " + removeInternalDuplicateSpaces("  1  2  3  "));	
+		System.out.println("\nRemoved internal spaces : " + removeInternalDuplicateSpaces("  1  2  3  "));	
 		
 	}
 
@@ -287,14 +287,18 @@ public class HomeworkThreeTestHarness {
 
 	//Extra Credit
 	public String removeInternalDuplicateSpaces(String string) {
-		
-		return ""; 
+		String result = string.replace("  ", " ");
+		return result; 
 	}
 	
 	//Method 12
 	public String productOfIntegers(Integer[] arr) {
-		
-		return "";
+		Integer product = arr[0];
+		for (int i = 1; i < arr.length; i++) {
+			Integer temp = arr[i];
+			product *= temp;
+		}
+		return product.toString();
 	}
 	
 	//Method 11
