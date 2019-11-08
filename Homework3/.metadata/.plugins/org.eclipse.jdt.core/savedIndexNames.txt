@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/Users/masonwheeler/OneDrive - Missouri State University/College Fall 2019/CSC 365-301/Homework/Homework 3/Homework3/.metadata/.plugins/org.eclipse.jdt.core
+1083294067.index
