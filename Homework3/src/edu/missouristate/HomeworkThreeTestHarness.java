@@ -305,31 +305,31 @@ public class HomeworkThreeTestHarness {
 	
 	//Method 10
 	public String findMostFrequent(Integer[] arr) {
-		
-		return "";
-	}
+		int count = 1, tempCount;
+		  Integer popular = arr[0];
+		  int temp = 0;
+		  for (int i = 0; i < (arr.length - 1); i++)
+		  {
+		    temp = arr[i];
+		    tempCount = 0;
+		    for (int j = 1; j < arr.length; j++)
+		    {
+		      if (temp == arr[j])
+		        tempCount++;
+		    }
+		    if (tempCount > count)
+		    {
+		      popular = temp;
+		      count = tempCount;
+		    }
+		  }
+		  return popular.toString();
+	} 
 	
 	//Method 9
 	public String sort(Integer[] arr) {
-		String result = new String();
-		 int temp;
-		 for (int i = 1; i < arr.length; i++) {
-			 for (int j = i; j > 0; j--) {
-				 if (arr[j] < arr [j - 1]) {
-					 temp = arr[j];
-					 arr[j] = arr[j - 1];
-					 arr[j - 1] = temp;
-				 }
-			 }
-		   	}
-		   	for (int i = 0; i < arr.length; i++) {
-		     result += arr[i];
-		     if (i != (arr.length - 1))
-				{
-					result += ",";
-				}
-		   	}
-		return result;
+	
+		return "needs done";
 	} 
 
 	//Method 8
