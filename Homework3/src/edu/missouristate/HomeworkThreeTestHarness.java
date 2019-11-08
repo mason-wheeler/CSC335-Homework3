@@ -299,8 +299,12 @@ public class HomeworkThreeTestHarness {
 	
 	//Method 11
 	public String sumOfIntegers(Integer[] arr) {
-		
-		return "";
+		Integer sum = 0;
+		for (int i = 0; i < arr.length; i++) {
+			Integer temp = arr[i];
+			sum += temp;
+		}
+		return sum.toString();
 	}
 	
 	//Method 10
