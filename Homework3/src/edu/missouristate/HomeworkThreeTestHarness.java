@@ -1,6 +1,7 @@
 package edu.missouristate;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class HomeworkThreeTestHarness {
 
@@ -213,7 +214,7 @@ public class HomeworkThreeTestHarness {
 		 **************************************************************************/
 		try {
 		    Integer[] arr1 = new Integer[] {3, 8, 7, 6, 5, -4, 3, 2, 1};      
-		    answer = "";   
+		    answer = sort(arr1);   
 		    System.out.println("\nSCRIPT " + index + "=> "+ answer);	
 		} catch (Exception e) {
 			handleError(e, index);
@@ -336,9 +337,9 @@ public class HomeworkThreeTestHarness {
 	
 	//Method 9
 	public String sort(Integer[] arr) {
-	
-		return "needs done";
-	} 
+		Arrays.sort(arr);
+		return Arrays.toString(arr);
+	}
 
 	//Method 8
 	public String joinElements(String[] arr, String delimeter) {
