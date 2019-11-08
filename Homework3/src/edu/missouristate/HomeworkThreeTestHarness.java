@@ -1,7 +1,5 @@
 package edu.missouristate;
 
-
-import java.sql.Array;
 import java.util.Arrays;
 
 public class HomeworkThreeTestHarness {
